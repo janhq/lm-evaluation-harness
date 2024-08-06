@@ -16,4 +16,4 @@ if [ -z "$OUTPUT_FILE" ]; then
 fi
 
 # display
-cat "$OUTPUT_FILE"
+# cat "$OUTPUT_FILE"
