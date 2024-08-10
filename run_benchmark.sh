@@ -11,7 +11,7 @@ lm_eval --model vllm --model_args pretrained=$MODEL_NAME,tensor_parallel_size=$G
     --batch_size auto \
     --output_path ./benchmark_results/
 # find the json file
-OUTPUT_FILE=$(find ./benchmark_results/ -type f -name '*.json')
+OUTPUT_FILE=$(find ./benchmark_results/ -type f -name '*.json' -print -quit)
 
 # Check if the JSON file was found
 if [ -z "$OUTPUT_FILE" ]; then
